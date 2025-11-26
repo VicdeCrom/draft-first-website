@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Starter responsive accessible website scaffold." />
+  <meta property="og:title" content="My Starter Website">
+  <meta property="og:description" content="A small, accessible, responsive starter website." />
+  <title>My Starter Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <h1 class="brand">MySite</h1>
+      <button id="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation">
+        ☰
+      </button>
+      <nav id="primary-nav" class="primary-nav" role="navigation" aria-label="Primary">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <section id="home" class="hero" aria-labelledby="hero-heading">
+      <div class="hero-content">
+        <h2 id="hero-heading">Build a better web presence</h2>
+        <p>Fast, accessible, and responsive starter template you can extend.</p>
+        <p><a class="cta" href="#contact">Get started</a></p>
+      </div>
+      <div class="hero-visual" aria-hidden="true"></div>
+    </section>
+
+    <section id="features" class="features" aria-labelledby="features-heading">
+      <h3 id="features-heading">Features</h3>
+      <ul class="feature-grid">
+        <li>
+          <h4>Responsive</h4>
+          <p>Layouts that adapt to mobile, tablet, and desktop.</p>
+        </li>
+        <li>
+          <h4>Accessible</h4>
+          <p>Keyboard-friendly navigation and semantic HTML.</p>
+        </li>
+        <li>
+          <h4>SEO-ready</h4>
+          <p>Meta tags and semantic structure for crawlability.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section id="contact" class="contact" aria-labelledby="contact-heading">
+      <h3 id="contact-heading">Contact</h3>
+      <form id="contact-form" novalidate>
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required />
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required />
+        </div>
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <div class="form-row">
+          <button type="submit" class="btn">Send message</button>
+          <span id="form-status" role="status" aria-live="polite"></span>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>&copy; <span id="year"></span> MySite — Built with care.</p>
+      <p><a href="#" rel="noopener">Privacy</a> · <a href="#" rel="noopener">Terms</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
